@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Тест</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1>Тест</h1>
+    </header>
+    <nav>
+        <a href="index.html">Головна сторінка</a>
+    </nav>
+    
+    <main>
+        
+        <form method="POST"  action="https://formspree.io/markhordi@gmail.com">
+            <label>Ваше Ім'я:
+                
+                <input type="text" name="user-name" 
+                        id=user-name 
+                        placeholder = "Ваше Ім'я" required/>
+        
+            </label>
+            <br>
+            
+            <label>Email:
+                <input type = "text" name = "user-email"
+                        id = "user-email"
+                        placeholder = "Email" required/>
+                
+            </label>
+            <br>
+            
+            <label>Стать:</label>
+                <input type="radio" name="gender" value="male"/>Чоловіча
+                <input type="radio" name="gender" value="female"/>Жіноча
+                <input type="radio" name="gender" value="other"/>Інше
+            <br>
+            
+            <b>Тест</b>
+            <br>
+            <label>На головній сторінці розповідається про Audi...
+                <input type="text" name="first-question"/><br>
+            </label>
+            <br>
+            
+            <label>Скільк кінських сил у дизельного двигуна Audi?</label><br>
+                <input type="radio" name="second-question" value="560" />560 к.с.
+                <input type="radio" name="second-question" value="130" />130 к.с.
+                <input type="radio" name="second-question" value="286" />286 к.с
+                <input type="radio" name="second-question" value="340" />340 к.с
+            <br>
+            
+            <label>Тип коробки передач:
+                <select name="third-question">
+                    <option value="mechanics">Механіка</option>
+                    <option value="s tronic">S tronic</option>
+                    <option value="automatic">Автомат</option>
+                  </select>
+            </label>
+            <br>
+            
+            <label>Які габарити Audi A7?<br>
+                <select name="fourth-question" multiple>
+                    <option value="3785">3785</option>
+                    <option value="1888">1888</option>
+                    <option value="4969">4969</option>
+                    <option value="2118">2118</option>
+                    <option value="1422">1422</option>
+                    <option value="2926">2926</option>
+                    <option value="3698">3698</option>
+                    <option value="жодне з переліченого">жодне з переліченого</option>
+                  </select>
+            </label>
+            <br>
+            <input type="submit" value="Відправити" />
+            
+        </form>
+        
+    </main>
+    
+</body>
+
+</html>
